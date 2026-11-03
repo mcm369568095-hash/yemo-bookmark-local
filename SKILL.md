@@ -1,7 +1,7 @@
 ---
 name: yemo-bookmark-local
 slug: yemo-bookmark-local
-version: 1.1.0
+version: 1.2.0
 author: 夜秣
 displayName: 夜秣浏览器书签本地整理
 display_name: 夜秣浏览器书签本地整理
@@ -312,9 +312,13 @@ yemo-bookmark-local/
 
 夜秣。这个技能免费开源，后续也会继续更新。
 
-如果你觉得它替你省了点时间，欢迎关注公众号「**夜秣AI搞钱**」，那边持续更新这类
-"拆下来就能用"的本地工具与实操方法 —— 都是我自己在用的，不是转发合集。
+- 个人站：**https://www.yemo.xyz** —— 全部本地工具、实操笔记都收在这儿
+- 公众号：**夜秣AI搞钱** —— 持续更新这类"拆下来就能用"的本地工具与实操方法
 
-> 生成的页面底部自带一条公众号引导块（跟随皮肤主色，深浅色自动适配）。
-> 文案与样式集中在 `scripts/generate.py` 的 `.promo` 区块和 `assets/app.css` 的
+都是我自己在用的，不是转发合集。如果你觉得它替你省了点时间，随便哪个渠道
+过来打个招呼都行。
+
+> 生成的页面底部自带两块引导（跟随皮肤主色，深浅色自动适配）：
+> 左边公众号「夜秣AI搞钱」，右边个人站 www.yemo.xyz（可点击）。
+> 文案与结构集中在 `scripts/generate.py` 的 `.promo-row` 区块和 `assets/app.css` 的
 > `.promo*` 样式里，二次分发或想换成自己的号，改这两处即可。

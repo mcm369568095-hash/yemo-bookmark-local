@@ -12,7 +12,7 @@
 [![License](https://img.shields.io/badge/license-MIT-E6B45C)](LICENSE)
 [![Local Only](https://img.shields.io/badge/data-never%20leaves%20your%20machine-2ea043)](#一本地保存本地操作一步都不出本机)
 
-<sub>关注公众号「<b>夜秣AI搞钱</b>」· 获取更多超实用技能</sub>
+<sub>个人站 <a href="https://www.yemo.xyz">yemo.xyz</a> · 公众号「<b>夜秣AI搞钱</b>」· 获取更多超实用技能</sub>
 
 </div>
 
@@ -66,6 +66,16 @@ python scripts/generate.py bookmarks.html -o 我的书签.html --name "我的书
 
 <div align="center">
 <img src="previews/预览-换皮肤面板.png" width="560" alt="换皮肤面板">
+</div>
+
+底部自带两块引导位（左侧公众号、右侧个人站），跟随皮肤与深浅色自动适配：
+
+<div align="center">
+<img src="previews/预览-页脚引导.png" width="880" alt="页脚引导">
+</div>
+
+<div align="center">
+<img src="previews/预览-页脚引导-深色.png" width="880" alt="页脚引导（深色）">
 </div>
 
 ---
@@ -166,11 +176,14 @@ yemo-bookmark-local/
 
 夜秣。这个技能免费开源，后续也会继续更新。
 
-如果你觉得它替你省了点时间，欢迎关注公众号「**夜秣AI搞钱**」，那边持续更新这类
-"拆下来就能用"的本地工具与实操方法 —— 都是我自己在用的，不是转发合集。
+- 个人站：**https://www.yemo.xyz** —— 全部本地工具、实操笔记都收在这儿
+- 公众号：**夜秣AI搞钱** —— 持续更新这类"拆下来就能用"的本地工具与实操方法
 
-> 生成的页面底部自带一条公众号引导块（跟随皮肤主色，深浅色自动适配）。
-> 文案与样式集中在 `scripts/generate.py` 的 `.promo` 区块和 `assets/app.css` 的
+都是我自己在用的，不是转发合集。
+
+> 生成的页面底部自带两块引导（跟随皮肤主色，深浅色自动适配）：
+> 左边公众号「夜秣AI搞钱」，右边个人站 www.yemo.xyz（可点击）。
+> 文案与结构集中在 `scripts/generate.py` 的 `.promo-row` 区块和 `assets/app.css` 的
 > `.promo*` 样式里，二次分发或想换成自己的号，改这两处即可。
 
 ## 版权

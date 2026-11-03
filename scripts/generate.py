@@ -520,13 +520,23 @@ __CSS__
   </div>
 
   <footer class="foot">
-    <div class="promo">
-      <div class="promo-icon">__ICON_PROMO__</div>
-      <div class="promo-text">
-        <div class="promo-title">关注公众号「<b>夜秣AI搞钱</b>」</div>
-        <div class="promo-desc">获取更多超实用技能</div>
+    <div class="promo-row">
+      <div class="promo">
+        <div class="promo-icon">__ICON_PROMO__</div>
+        <div class="promo-text">
+          <div class="promo-title">关注公众号「<b>夜秣AI搞钱</b>」</div>
+          <div class="promo-desc">获取更多超实用技能</div>
+        </div>
+        <div class="promo-hint">微信搜一搜</div>
       </div>
-      <div class="promo-hint">微信搜一搜</div>
+      <a class="promo site" href="https://www.yemo.xyz" target="_blank" rel="noopener">
+        <div class="promo-icon">__ICON_SITE__</div>
+        <div class="promo-text">
+          <div class="promo-title">夜秣个人站 <b>yemo.xyz</b></div>
+          <div class="promo-desc">全部本地工具与实操笔记</div>
+        </div>
+        <div class="promo-hint">去看看 →</div>
+      </a>
     </div>
     <div class="foot-line">
       <span>夜秣原创 · 本地生成于 __GENERATED__</span>
@@ -608,6 +618,7 @@ ICONS = {
     "moon": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>',
     "auto": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M12 4v13" opacity=".45"/></svg>',
     "promo": '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.2 3C5.2 3 2 5.9 2 9.5c0 2 1 3.7 2.7 4.9L4.1 17l2.9-1.4c.7.2 1.5.3 2.2.3h.4a5.6 5.6 0 0 1-.3-1.8c0-3.4 3-6.1 6.9-6.1h.3C15.7 5.1 12.8 3 9.2 3z"/><path d="M15.9 9.2c-3.3 0-6 2.3-6 5.2 0 2.9 2.7 5.2 6 5.2.7 0 1.4-.1 2-.3l2.5 1.2-.5-2.2c1.4-1 2.2-2.4 2.2-3.9 0-2.9-2.7-5.2-6.2-5.2z"/></svg>',
+    "site": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg>',
 }
 
 
@@ -776,7 +787,8 @@ def build(bookmarks_file, out_file, skin="yemo-navy", icons="direct",
            .replace("__ICON_SUN__", ICONS["sun"])
            .replace("__ICON_MOON__", ICONS["moon"])
            .replace("__ICON_AUTO__", ICONS["auto"])
-           .replace("__ICON_PROMO__", ICONS["promo"]))
+           .replace("__ICON_PROMO__", ICONS["promo"])
+           .replace("__ICON_SITE__", ICONS["site"]))
 
     # 标记默认皮肤，页面首屏用它
     out = out.replace('data-theme="yemo-navy"', 'data-theme="%s"' % skin, 1)

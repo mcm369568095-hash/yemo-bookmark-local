@@ -536,7 +536,10 @@ body::before {
   display: flex; flex-direction: column; gap: 16px;
 }
 
-/* 公众号推广位 —— 跟随皮肤主色，不额外占网络请求 */
+/* 公众号 + 个人站推广位 —— 跟随皮肤主色，不额外占网络请求 */
+.promo-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+}
 .promo {
   display: flex; align-items: center; gap: 13px;
   padding: 14px 18px;
@@ -545,6 +548,15 @@ body::before {
   background: linear-gradient(135deg,
     color-mix(in srgb, var(--primary) 9%, var(--card)),
     color-mix(in srgb, var(--primary) 3%, var(--card)));
+}
+a.promo {
+  text-decoration: none; color: inherit;
+  transition: border-color .18s, transform .18s, box-shadow .18s;
+}
+a.promo:hover {
+  border-color: color-mix(in srgb, var(--primary) 55%, var(--border));
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -12px color-mix(in srgb, var(--primary) 60%, transparent);
 }
 .promo-icon {
   width: 36px; height: 36px; flex: none;
@@ -570,6 +582,9 @@ body::before {
 .foot-line {
   display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
   font-size: 11px; color: var(--muted-foreground);
+}
+@media (max-width: 720px) {
+  .promo-row { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
   .promo-hint { display: none; }
