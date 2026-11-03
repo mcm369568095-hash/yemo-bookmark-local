@@ -12,6 +12,8 @@
 [![License](https://img.shields.io/badge/license-MIT-E6B45C)](LICENSE)
 [![Local Only](https://img.shields.io/badge/data-never%20leaves%20your%20machine-2ea043)](#一本地保存本地操作一步都不出本机)
 
+<sub>关注公众号「<b>夜秣AI搞钱</b>」· 获取更多超实用技能</sub>
+
 </div>
 
 ---
@@ -159,6 +161,17 @@ yemo-bookmark-local/
 - **同址去重**：同一个 URL 收藏多次只留第一条。
 - **数据嵌在 HTML 里**：所以单文件可离线、可发给别人；反过来说，**别把含私密地址的页面随手发出去**。
 - **页面已 `noindex`**：不会被搜索引擎收录。
+
+## 关于作者
+
+夜秣。这个技能免费开源，后续也会继续更新。
+
+如果你觉得它替你省了点时间，欢迎关注公众号「**夜秣AI搞钱**」，那边持续更新这类
+"拆下来就能用"的本地工具与实操方法 —— 都是我自己在用的，不是转发合集。
+
+> 生成的页面底部自带一条公众号引导块（跟随皮肤主色，深浅色自动适配）。
+> 文案与样式集中在 `scripts/generate.py` 的 `.promo` 区块和 `assets/app.css` 的
+> `.promo*` 样式里，二次分发或想换成自己的号，改这两处即可。
 
 ## 版权
 

@@ -1,7 +1,7 @@
 ---
 name: yemo-bookmark-local
 slug: yemo-bookmark-local
-version: 1.0.0
+version: 1.1.0
 author: 夜秣
 displayName: 夜秣浏览器书签本地整理
 display_name: 夜秣浏览器书签本地整理
@@ -10,6 +10,14 @@ summary: 把浏览器书签变成卡片式本地导航页：不上传、不联�
 description: "把浏览器导出的书签 HTML 整理成可搜索、可筛选、可换皮肤的本地卡片式导航页。全程本地保存、本地操作：书签数据一步都不出本机，不上传、不联网、不依赖任何服务端、不需要账号，产出单个 HTML 文件，双击即可离线打开，隐私性接近「纯本地软件」。生成前会先问用户「这一页叫什么名字」，名字决定页面标题和左上角图标用字，任何人拿到都能填自己的。内置 10 套配色皮肤 + 深浅色双模 + 跟随系统 + 自定义皮肤导入导出。使用前提：需要用户自己从常用浏览器导出一次书签（技能里已写好 Chrome / Edge / Firefox 导出路径）。触发关键词：整理书签、书签导航、书签卡片、收藏夹整理、书签分类、换皮肤书签页、本地导航页、书签隐私、本地保存、不上传、离线书签、bookmark organizer。"
 description_zh: "浏览器书签一键变成卡片式本地导航页。全程本地保存、本地操作，书签数据不上传不联网、不需要账号与服务端，产出单个 HTML 双击即开、断网也能用。14 类智能分类、搜索高亮、卡片/紧凑双视图、10 套配色皮肤与深浅色模式，图标优先用导出文件自带的内嵌图，零网络请求。页面名字与左上角图标按用户填的名字自动生成。使用前提：需先自己从浏览器导出一次书签，技能内附 Chrome / Edge / Firefox 三条导出路径。"
 description_en: "Turn your browser bookmarks into a card-style local start page. Everything runs locally: bookmark data never leaves your machine, no upload, no account, no server; the output is a single offline HTML file you can double-click. Features 14 smart categories, instant search highlighting, card and compact views, 10 built-in color skins plus light/dark modes, and an icon strategy that reuses the base64 icons already embedded in the export so the page makes zero network requests. The page title and the logo tile are generated from whatever name the user types in. Prerequisite: you export your bookmarks from the browser once; the skill lists the exact menu paths for Chrome, Edge and Firefox."
+examples_zh:
+  - "把我从 Chrome 导出的书签整理成一个能搜索的卡片页面，数据别上传"
+  - "书签太多了，帮我按分类整理成一个本地导航页，还能换皮肤的那种"
+  - "做一个离线书签页，断网也能打开，图标要能显示出来"
+examples_en:
+  - "Turn my exported Chrome bookmarks into a searchable card page, keep the data local"
+  - "Organize my messy bookmarks into a local start page with switchable skins"
+  - "Build an offline bookmark page that still shows site icons without a network"
 tags:
   - 书签
   - 导航页
@@ -299,3 +307,14 @@ yemo-bookmark-local/
 名字与图标自动推导等本地化改造。
 
 书签解析、分类归组、卡片渲染、简介库、名字/图标推导均为本项目自研。
+
+## 关于作者
+
+夜秣。这个技能免费开源，后续也会继续更新。
+
+如果你觉得它替你省了点时间，欢迎关注公众号「**夜秣AI搞钱**」，那边持续更新这类
+"拆下来就能用"的本地工具与实操方法 —— 都是我自己在用的，不是转发合集。
+
+> 生成的页面底部自带一条公众号引导块（跟随皮肤主色，深浅色自动适配）。
+> 文案与样式集中在 `scripts/generate.py` 的 `.promo` 区块和 `assets/app.css` 的
+> `.promo*` 样式里，二次分发或想换成自己的号，改这两处即可。
